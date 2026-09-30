@@ -5,7 +5,38 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+:root {
+    --background: #eaf1f8;
+    --card: #ffffff;
+    --text: #14213d;
+    --muted-text: #5a6785;
+    --border: #b9c7db;
+    --accent-1: #ffb627;
+    --accent-2: #3f6fd8;
+    --placeholder: #dfe7f2;
+}
+
+[data-theme="dark"] {
+    --background: #0d1526;
+    --card: #16213a;
+    --text: #eef3ff;
+    --muted-text: #9aa8c7;
+    --border: #3a4a75;
+    --accent-1: #ffb627;
+    --accent-2: #7fa4ff;
+    --placeholder: #22304f;
+}
+
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    
+    --color-background: var(--background);
+    --color-card: var(--card);
+    --color-text: var(--text);
+    --color-muted-text: var(--muted-text);
+    --color-border: var(--border);
+    --color-accent-1: var(--accent-1);
+    --color-accent-2: var(--accent-2);
+    --color-placeholder: var(--placeholder);
 }
