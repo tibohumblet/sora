@@ -9,6 +9,7 @@
     <div class="flex items-center gap-6 font-semibold">
 
         <a href="{{ route("index") }}">Home</a>
+        <x-dark-mode-btn/>
 
     </div>
 
