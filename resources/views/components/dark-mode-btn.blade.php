@@ -1,4 +1,4 @@
 
 <button type="button" data-dark-mode-toggle>
-    Dark/Light
+    Theme
 </button>

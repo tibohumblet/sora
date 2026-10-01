@@ -8,7 +8,7 @@ function enableDarkMode() {
         document.documentElement.dataset.theme = state ? 'dark' : 'light';
 
         document.querySelectorAll('[data-dark-mode-toggle]').forEach(button => {
-            button.textContent = state ? 'Light' : 'Dark';
+            button.textContent = state ? 'Light Mode' : 'Dark Mode';
         });
 
     }
