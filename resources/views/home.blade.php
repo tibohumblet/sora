@@ -14,7 +14,7 @@
     <x-nav/>
 
     <div 
-        class="p-6 pt-32 pb-32 bg-cover bg-center"
+        class="pr-12 pl-12 pt-32 pb-32 bg-cover bg-center"
         style="background-image: url('{{ asset('images/background-home-title.svg') }}')"
     >
 
