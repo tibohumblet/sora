@@ -9,9 +9,19 @@
 
     <title>Home</title>
 </head>
-<body class="bg-background">
+<body class="font-sans bg-background text-text text-base">
 
     <x-nav/>
+
+    <div 
+        class="p-6 pt-32 pb-32 bg-cover bg-center"
+        style="background-image: url('{{ asset('images/background-home-title.svg') }}')"
+    >
+
+        <h1 class="font-head text-[clamp(2.2rem,6vw,3.8rem)] font-bold">Share the bright light you saw.</h1>
+        <p class="text-lg">Sora is a home for photos people want to keep. Post yours, download theirs, say something kind.</p>
+
+    </div>
 
 </body>
 </html>
