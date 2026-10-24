@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\password;
 
 class UserService
 {
@@ -28,7 +29,15 @@ class UserService
     {
         $validated = validator($data, [
             'email' => 'required|email|unique:users,email',
-            'password' => 'required|string|min:8',
+            'password' => [
+                'required',
+                'string',
+                'min:8',
+                'regex:/[A-Z]/',        // At least one uppercase letter
+                'regex:/[a-z]/',        // At least one lowercase letter
+                'regex:/[0-9]/',        // At least one number
+                'regex:/[^a-zA-Z0-9]/', // At least one special character
+            ],
         ])->validate();
 
         return User::create([
